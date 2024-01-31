@@ -2,7 +2,7 @@ import { Link, useRouter } from "expo-router";
 import { View, Pressable, Text, StyleSheet, Image } from "react-native";
 import { Button } from "@rneui/base";
 import CustomButton from "../src/components/CustomButton";
-import logo from "../src/assets/logo.png"
+import logo from "../src/assets/logo.png";
 import { globalStyles } from "../src/constants/globalStyles";
 
 const LoginPage = () => {
@@ -17,13 +17,13 @@ const LoginPage = () => {
         <CustomButton
           label="Sign in"
           onPress={() => {
-            router.push("/login");
+            router.replace("/login");
           }}
         />
         <CustomButton
           label="Register account"
           onPress={() => {
-            router.push("/register");
+            router.replace("/register");
           }}
         />
       </View>
