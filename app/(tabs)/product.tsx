@@ -19,7 +19,7 @@ const HomePage = () => {
   const allProducts = useSelector(selectAllProducts);
   const dispatch = useDispatch();
   const getAllProducts = () => {
-    fetch("http://10.0.2.2:3000/products")
+    fetch("http://${process.env.HOST_URL}/products")
       .then((response) => response.json())
       .then((result) => {
         dispatch(setAllProducts(result));

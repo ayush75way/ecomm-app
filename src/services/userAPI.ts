@@ -16,7 +16,7 @@ type Props = {
 
 export const saveUserToDB = (props: Props) => {
   const { userId, updatedUserData, message } = props;
-  fetch(`http://10.0.2.2:3000/users/${userId}`, {
+  fetch(`${process.env.HOST_URL}/users/${userId}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(updatedUserData),

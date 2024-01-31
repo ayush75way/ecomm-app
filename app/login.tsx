@@ -41,7 +41,7 @@ const LoginPage = () => {
 
       return;
     }
-    fetch("http://10.0.2.2:3000/users")
+    fetch("http://${process.env.HOST_URL}/users")
       .then((res) => res.json())
       .then((data) => {
         verifyUser(data);
