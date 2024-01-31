@@ -84,28 +84,28 @@
   ],
   "users": [
     {
-      "id": "65fc",
+      "id": "12f7",
       "email": "user@gmail.com",
       "password": "pass123",
       "cart": [],
       "orders": [
         {
-          "id": "1",
+          "id": "8",
           "image": "https://picsum.photos/300",
-          "name": "Infant Hair Shampoo 350 ml Bottle (ISO, ORGANIC)",
+          "name": "Pro-Health Gum & Breath Purify Rinse",
           "brand": {
-            "name": "Aneia"
+            "name": "Crest"
           },
-          "price": 5.99
+          "price": 6.99
         },
         {
-          "id": "4",
+          "id": "9",
           "image": "https://picsum.photos/300",
-          "name": "Liquid Hand Soap Refill Bottle",
+          "name": "Green tea zero antiseptic mouthwash",
           "brand": {
-            "name": "Lemon Verbena"
+            "name": "Listerine"
           },
-          "price": 8.24
+          "price": 5.49
         }
       ]
     }
