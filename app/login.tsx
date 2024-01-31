@@ -7,7 +7,7 @@ import { globalStyles } from "../src/constants/globalStyles";
 import logo from "../src/assets/logo.png";
 import { useDispatch } from "react-redux";
 import { setUserData } from "../src/store/userSlice";
-import { showToast } from "../src/utils/helpers";
+import { showToast, validateEmail } from "../src/utils/helpers";
 
 type User = {
   id: string;
@@ -34,6 +34,13 @@ const LoginPage = () => {
   };
 
   const handleSubmit = async () => {
+    if (!validateEmail(email)) {
+      showToast("Wrong email entered");
+      setEmail("");
+      setPassword("");
+
+      return;
+    }
     fetch("http://10.0.2.2:3000/users")
       .then((res) => res.json())
       .then((data) => {

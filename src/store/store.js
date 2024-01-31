@@ -6,5 +6,3 @@ export const store = configureStore({
     user: userReducer,
   },
 });
-
-// "start:proj": "concurrently "\npm start\" "\npm run json-server\" ",

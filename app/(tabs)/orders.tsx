@@ -23,9 +23,9 @@ const Orders = () => {
       style={globalStyles.container}
     >
       <Text style={globalStyles.boldText}>Order history</Text>
-      {userData.orders.length > 0 ? (
+      {userData?.orders.length > 0 ? (
         <View>
-          {userData.orders.map((order: OrderProps, index: number) => (
+          {userData?.orders.map((order: OrderProps, index: number) => (
             <OrderItem key={`${order.id}-${index}`} {...order} />
           ))}
         </View>

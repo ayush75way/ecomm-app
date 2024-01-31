@@ -118,6 +118,23 @@
           "price": 4.95
         }
       ]
+    },
+    {
+      "id": "0c9f",
+      "email": "temp@gmail.com",
+      "password": "pass123",
+      "cart": [],
+      "orders": [
+        {
+          "id": "1",
+          "image": "https://picsum.photos/300",
+          "name": "Infant Hair Shampoo 350 ml Bottle (ISO, ORGANIC)",
+          "brand": {
+            "name": "Aneia"
+          },
+          "price": 5.99
+        }
+      ]
     }
   ]
 }
