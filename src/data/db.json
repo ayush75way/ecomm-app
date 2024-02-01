@@ -83,31 +83,5 @@
     }
   ],
   "users": [
-    {
-      "id": "12f7",
-      "email": "user@gmail.com",
-      "password": "pass123",
-      "cart": [],
-      "orders": [
-        {
-          "id": "8",
-          "image": "https://picsum.photos/300",
-          "name": "Pro-Health Gum & Breath Purify Rinse",
-          "brand": {
-            "name": "Crest"
-          },
-          "price": 6.99
-        },
-        {
-          "id": "9",
-          "image": "https://picsum.photos/300",
-          "name": "Green tea zero antiseptic mouthwash",
-          "brand": {
-            "name": "Listerine"
-          },
-          "price": 5.49
-        }
-      ]
-    }
   ]
 }

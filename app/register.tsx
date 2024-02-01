@@ -25,7 +25,7 @@ const RegisterPage = () => {
       showToast("Passwords should match");
       return;
     }
-    fetch("http://${process.env.HOST_URL}/users", {
+    fetch(`http://10.0.2.2:3000/users`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
